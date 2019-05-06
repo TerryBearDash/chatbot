@@ -1,0 +1,17 @@
+<ion-content padding>
+  <h1>Welcome back</h1>
+  <p>Please login to access your information on permyssion</p>
+  <form (ngSubmit)="onSubmit()">
+      <ion-item>
+          <ion-label stacked>E-Mail</ion-label>
+          <ion-input required name="email" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label stacked>Password</ion-label>
+          <ion-input required name="password" type="text"></ion-input>
+      </ion-item>
+      <button ion-button block clear color="primary" type="submit">
+          Login
+      </button>
+  </form>
+</ion-content>
