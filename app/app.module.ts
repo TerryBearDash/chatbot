@@ -7,6 +7,8 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { DataTransportService } from '../services/data-transport.service';
+import { ApiService } from '../services/api.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     BrowserModule,
     IonicModule.forRoot(MyApp, {
       mode: 'ios',
-      tabsPlacement: 'top',
+      tabsPlacement: 'bottom',
       iconMode: 'ios',
     })
   ],
@@ -33,7 +35,9 @@ import { TabsPage } from '../pages/tabs/tabs';
     TabsPage
   ],
   providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DataTransportService,
+    ApiService
   ]
 })
 export class AppModule {}
