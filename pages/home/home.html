@@ -1,7 +1,7 @@
 <ion-header no-border>
   <ion-toolbar  color="primary">
     <ion-searchbar
-      [(ngModel)]="myInput"
+      [(ngModel)]="globalSearch"
       [showCancelButton]="shouldShowCancel"
       (ionInput)="onInput($event)"
       (ionCancel)="onCancel($event)">
@@ -15,7 +15,7 @@
   </p>
   <ion-searchbar
     class="chatbot-search"
-    [(ngModel)]="myInput"
+    [(ngModel)]="homeSearch"
     [showCancelButton]="shouldShowCancel"
     (ionInput)="onInput($event)"
     (ionCancel)="onCancel($event)">
