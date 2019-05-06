@@ -19,7 +19,9 @@ import { TabsPage } from '../pages/tabs/tabs';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp, {
-      mode: 'ios'
+      mode: 'ios',
+      tabsPlacement: 'top',
+      iconMode: 'ios',
     })
   ],
   bootstrap: [IonicApp],
