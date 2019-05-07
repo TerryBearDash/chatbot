@@ -5,11 +5,14 @@ import { MyApp } from './app.component';
 
 import { LoginPage } from '../pages/auth/login/login';
 import { RegisterPage } from '../pages/auth/register/register';
-import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { DataTransportService } from '../services/data-transport.service';
 import { ApiService } from '../services/api.service';
+import { ImportantPage } from '../pages/important-numbers/important';
+import { LibraryPage } from '../pages/library/library';
+import { NotificationsPage } from '../pages/notifications/notifications';
+import { PortfolioPage } from '../pages/portfolio/portfolio';
 
 import { NavController } from 'ionic-angular';
 
@@ -18,7 +21,10 @@ import { NavController } from 'ionic-angular';
     MyApp,
     LoginPage,
     RegisterPage,
-    ContactPage,
+    ImportantPage,
+    LibraryPage,
+    NotificationsPage,
+    PortfolioPage,
     HomePage,
     TabsPage
   ],
@@ -35,7 +41,10 @@ import { NavController } from 'ionic-angular';
     MyApp,
     LoginPage,
     RegisterPage,
-    ContactPage,
+    ImportantPage,
+    LibraryPage,
+    NotificationsPage,
+    PortfolioPage,
     HomePage,
     TabsPage
   ],

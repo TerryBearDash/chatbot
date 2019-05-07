@@ -9,10 +9,13 @@
   </ion-toolbar>
 </ion-footer> -->
 <ion-content padding no-border>
+  <h1 color="primary">
+    Welcome to the permyssion
+  </h1>
   <p color="primary">
-    Welcome to the permyssion mobile app. We aim to place your personal information back in your hands. 
+    Start by typing hello in the box below.
   </p>
-  <ion-grid class="options-grid">
+  <!-- <ion-grid class="options-grid">
     <ion-row>
       <ion-col>
         <a (click)="goToDashboard()" class="btn-container">
@@ -53,7 +56,7 @@
         </a>
       </ion-col>
     </ion-row>
-  </ion-grid>
+  </ion-grid> -->
   <ion-searchbar
     color="primary"
     class="chatbot-search"
@@ -64,10 +67,3 @@
     [placeholder]="'How can we help?'">
   </ion-searchbar>
 </ion-content>
-<ion-footer no-border>
-  <ion-buttons end>
-    <button ion-button clear large menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-  </ion-buttons>
-</ion-footer>

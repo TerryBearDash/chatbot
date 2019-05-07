@@ -2,26 +2,21 @@
   <ion-content padding>
     <h1><strong>Hi Jonathan</strong></h1>
     <p>Here you can manage all your information.</p>
-    <ion-list no-border no-padding>
-      <ion-item no-padding menuToggle>
-          <p primary>Dashboard</p>
-      </ion-item>
-      <ion-item no-padding menuToggle>
-          <p color="primary">Important Numbers</p>
-      </ion-item>
-      <ion-item no-padding menuToggle>
-          <p color="primary">My Profile</p>
-      </ion-item>
-      <ion-item no-padding menuToggle>
-          <p color="primary">Library</p>
-      </ion-item>
-      <ion-item no-padding menuToggle>
-          <p color="primary">Feed</p>
-      </ion-item>
-      <ion-item no-padding menuToggle>
-          <p color="primary">Settings</p>
-      </ion-item>
-    </ion-list>
+    <a class="nav-links">Dashboard</a>
+    <a class="nav-links">Important Numbers</a>
+    <a class="nav-links">My Profile</a>
+    <a class="nav-links">Library</a>
+    <a class="nav-links">Feed</a>
+    <a class="nav-links">Settings</a>
+    <ion-searchbar
+      color="primary"
+      class="chatbot-search"
+      [(ngModel)]="homeSearch"
+      [showCancelButton]="shouldShowCancel"
+      (ionInput)="onInput($event)"
+      (ionCancel)="onCancel($event)"
+      [placeholder]="'How can we help?'">
+    </ion-searchbar>
   </ion-content>
   <ion-footer no-border>
     <ion-toolbar color="primary" no-border>

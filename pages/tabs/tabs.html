@@ -1,8 +1,8 @@
-<ion-tabs no-border color="primary">
-  <ion-tab [root]="tab1Root" tabIcon="desktop"></ion-tab>
-  <ion-tab [root]="tab1Root" tabIcon="pie"></ion-tab>
-  <ion-tab [root]="tab1Root" tabIcon="folder"></ion-tab>
-  <ion-tab [root]="tab2Root" tabIcon="share-alt"></ion-tab>
-  <ion-tab [root]="tab2Root" tabIcon="notifications"></ion-tab>
-  <ion-tab [root]="tab3Root" tabIcon="menu"></ion-tab>
+<ion-tabs no-border color="light">
+  <ion-tab [root]="tab1Root" tabIcon="desktop-outline"></ion-tab>
+  <ion-tab [root]="tab2Root" tabIcon="pie-outline"></ion-tab>
+  <ion-tab [root]="tab3Root" tabIcon="folder-outline"></ion-tab>
+  <ion-tab [root]="tab4Root" tabIcon="share-alt-outline"></ion-tab>
+  <ion-tab [root]="tab5Root" tabIcon="notifications-outline"></ion-tab>
+  <ion-tab (ionSelect)="toggleMenu($event)" tabIcon="menu"></ion-tab>
 </ion-tabs>
