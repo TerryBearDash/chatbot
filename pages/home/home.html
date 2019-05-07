@@ -1,25 +1,3 @@
-<ion-header>
-  <ion-toolbar color="light">
-    <ion-buttons start>
-      <button ion-button clear large menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-    </ion-buttons>
-    <ion-title>
-      Permyssion
-    </ion-title>
-  </ion-toolbar>
-  <ion-searchbar
-    color="light"
-    class="chatbot-search"
-    [(ngModel)]="homeSearch"
-    [showCancelButton]="shouldShowCancel"
-    (ionInput)="onInput($event)"
-    (ionCancel)="onCancel($event)"
-    [placeholder]="'Search'">
-  </ion-searchbar>
-</ion-header>
-
 <!-- <ion-footer no-border>
   <ion-toolbar no-border color="primary">
     <ion-searchbar
@@ -38,34 +16,58 @@
     <ion-row>
       <ion-col>
         <a (click)="goToDashboard()" class="btn-container">
+          <ion-icon name="desktop-outline"></ion-icon>
+          <p>Dashboard</p>
         </a>
-        <ion-icon name="desktop-outline"></ion-icon>
-        <p>Dashboard</p>
       </ion-col>
       <ion-col>
-        <ion-icon name="paper-outline"></ion-icon>
-        <p>Important Numbers</p>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <ion-icon name="person-outline"></ion-icon>
-        <p>My Profile</p>
+        <a (click)="goToImportantNumbers()" class="btn-container">
+          <ion-icon name="paper-outline"></ion-icon>
+          <p>Important Numbers</p>
+        </a>
       </ion-col>
       <ion-col>
-        <ion-icon name="folder-outline"></ion-icon>
-        <p>Library</p>
+        <a (click)="goToProfile()" class="btn-container">
+          <ion-icon name="person-outline"></ion-icon>
+          <p>My Profile</p>
+        </a>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-icon name="notifications-outline"></ion-icon>
-        <p>Feed</p>
+        <a (click)="goToLibrary()" class="btn-container">
+          <ion-icon name="folder-outline"></ion-icon>
+          <p>Library</p>
+        </a>
       </ion-col>
       <ion-col>
-        <ion-icon name="cog-outline"></ion-icon>
-        <p>Settings</p>
+        <a (click)="goToFeed()" class="btn-container">
+          <ion-icon name="notifications-outline"></ion-icon>
+          <p>Feed</p>
+        </a>
+      </ion-col>
+      <ion-col>
+        <a (click)="goToSettings()" class="btn-container">
+          <ion-icon name="cog-outline"></ion-icon>
+          <p>Settings</p>
+        </a>
       </ion-col>
     </ion-row>
   </ion-grid>
+  <ion-searchbar
+    color="primary"
+    class="chatbot-search"
+    [(ngModel)]="homeSearch"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="onInput($event)"
+    (ionCancel)="onCancel($event)"
+    [placeholder]="'How can we help?'">
+  </ion-searchbar>
 </ion-content>
+<ion-footer no-border>
+  <ion-buttons end>
+    <button ion-button clear large menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-footer>

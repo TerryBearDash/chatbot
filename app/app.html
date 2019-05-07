@@ -1,11 +1,35 @@
-<ion-menu [content]="mycontent">
-  <ion-content>
-    <h1 padding><strong>Hi Jonathan</strong></h1>
+<ion-menu [content]="mycontent" side="right">
+  <ion-content padding>
+    <h1><strong>Hi Jonathan</strong></h1>
     <p>Here you can manage all your information.</p>
-    <ion-list>
-      <p>some menu content, could be list items</p>
+    <ion-list no-border no-padding>
+      <ion-item no-padding menuToggle>
+          <p primary>Dashboard</p>
+      </ion-item>
+      <ion-item no-padding menuToggle>
+          <p color="primary">Important Numbers</p>
+      </ion-item>
+      <ion-item no-padding menuToggle>
+          <p color="primary">My Profile</p>
+      </ion-item>
+      <ion-item no-padding menuToggle>
+          <p color="primary">Library</p>
+      </ion-item>
+      <ion-item no-padding menuToggle>
+          <p color="primary">Feed</p>
+      </ion-item>
+      <ion-item no-padding menuToggle>
+          <p color="primary">Settings</p>
+      </ion-item>
     </ion-list>
   </ion-content>
+  <ion-footer no-border>
+    <ion-toolbar color="primary" no-border>
+      <button ion-button clear large menuToggle (click)="logout()">
+        Logout
+      </button>
+    </ion-toolbar>
+  </ion-footer>
 </ion-menu>
 
 <ion-nav #mycontent [root]="rootPage"></ion-nav>
